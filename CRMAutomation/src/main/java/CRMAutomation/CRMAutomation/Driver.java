@@ -39,8 +39,9 @@ public class Driver {
 	public void driverLoadModules() throws IOException {
 		
 		try {
+			System.out.println("Location is "+location);
 			location = System.getProperty("user.dir")+"\\Test Data\\Driver.xlsx";
-			
+			System.out.println("Location is "+location);
 			fis = new FileInputStream(new File(location));
 			wb = new XSSFWorkbook(fis);
 			sheet = wb.getSheet("Driver");
